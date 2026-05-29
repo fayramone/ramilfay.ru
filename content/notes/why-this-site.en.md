@@ -11,7 +11,7 @@ Not a blog, not a portfolio, not a resume. Just a place where things occasionall
 Built with Hugo, styled in CSS, deployed via Git. Font is JetBrains Mono, because I wanted it that way.
 
 ```bash
-git push origin main
+git push origin master
 # how it's done
 ```
 ```JS

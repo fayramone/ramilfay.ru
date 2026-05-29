@@ -11,7 +11,7 @@ draft: false
 Написано на Hugo, задизайнено в CSS, задеплоено через Git. Шрифт — JetBrains Mono, потому что мне так захотелось.
 
 ```bash
-git push origin main
+git push origin master
 # как я это делаю
 ```
 ```JS
