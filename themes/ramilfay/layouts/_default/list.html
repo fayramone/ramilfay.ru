@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="page-section">
+  <h2 class="page-title">{{ .Site.Params.notes_title }}</h2>
+  {{ if .Pages }}
+  <ul class="notes-list">
+    {{ range .Pages.ByDate.Reverse }}
+    <li class="note-item">
+      <time class="note-date">{{ .Date.Format "2006-01-02" }}</time>
+      <a href="{{ .RelPermalink }}" class="note-link">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p class="empty">{{ .Site.Params.notes_empty }}</p>
+  {{ end }}
+</section>
+{{ end }}

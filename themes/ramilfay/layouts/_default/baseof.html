@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" data-theme="auto">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/syntax-dark.css" | relURL }}" id="syntax-dark" media="all">
+  <link rel="stylesheet" href="{{ "css/syntax-light.css" | relURL }}" id="syntax-light" media="not all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="{{ "/" | relLangURL }}" class="nav-logo">rf</a>
+      <div class="nav-links">
+        <a href="{{ "/notes" | relLangURL }}" {{ if eq .Section "notes" }}class="active"{{ end }}>{{ .Site.Params.nav_notes }}</a>
+        <a href="{{ "/about" | relLangURL }}" {{ if eq .Type "about" }}class="active"{{ end }}>{{ .Site.Params.nav_about }}</a>
+      </div>
+      <div class="nav-right">
+        {{ $otherLang := .Site.Params.lang_switch }}
+        {{ range .Translations }}
+          <a href="{{ .RelPermalink }}" class="lang-switch">{{ $otherLang }}</a>
+        {{ else }}
+          {{ if eq .Site.Language.Lang "ru" }}
+            <a href="/en/" class="lang-switch">en</a>
+          {{ else }}
+            <a href="/" class="lang-switch">ru</a>
+          {{ end }}
+        {{ end }}
+        <button class="theme-toggle" id="themeToggle" title="toggle theme">░</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <span>{{ now.Format "2006" }} / ramil fayzukhanov</span>
+  </footer>
+
+  <script src="{{ "js/theme.js" | relURL }}"></script>
+</body>
+</html>

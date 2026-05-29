@@ -1,0 +1,56 @@
+baseURL = "https://ramilfay.ru/"
+title = "ramil fayzukhanov"
+theme = "ramilfay"
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.ru]
+    label = "ru"
+    weight = 1
+    title = "ramil fayzukhanov"
+    [languages.ru.params]
+      description = "персональная страница"
+      tagline = "прикладной админ в финтехе. стараюсь в сторону devops и ооп. разбираюсь как всё устроено"
+      nav_notes = "заметки"
+      nav_about = "о себе"
+      nav_home = "главная"
+      about_title = "о себе"
+      notes_title = "заметки"
+      cv_label = "скачать резюме →"
+      lang_switch = "en"
+      read_more = "читать →"
+      back = "← назад"
+      notes_empty = "заметок пока нет."
+
+  [languages.en]
+    label = "en"
+    weight = 2
+    title = "ramil fayzukhanov"
+    [languages.en.params]
+      description = "personal page"
+      tagline = "admin in fintech. moving toward devops and oop. learning how things work"
+      nav_notes = "notes"
+      nav_about = "about"
+      nav_home = "home"
+      about_title = "about"
+      notes_title = "notes"
+      cv_label = "download cv →"
+      lang_switch = "ru"
+      read_more = "read →"
+      back = "← back"
+      notes_empty = "no notes yet."
+
+[params]
+  github = "https://github.com/fayramone"
+  telegram = "https://t.me/fayzukhanov"
+  instagram = "https://instagram.com/ramilfay"
+  cv_url = "https://drive.google.com/file/d/1g_NDwdA3PC7P3Qmn9z88wB6F1-1X3iVN/view?usp=sharing"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    style = "dracula"

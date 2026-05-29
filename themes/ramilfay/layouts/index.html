@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="home">
+  <div class="home-identity">
+    <h1 class="home-name">~$ ramil fayzukhanov<span class="cursor">█</span></h1>
+    <p class="home-tagline">{{ .Site.Params.tagline }}</p>
+  </div>
+  <div class="home-links">
+    <a href="{{ .Site.Params.github }}" class="ext-link" target="_blank" rel="noopener">gh</a>
+    <span class="sep">/</span>
+    <a href="{{ .Site.Params.telegram }}" class="ext-link" target="_blank" rel="noopener">tg</a>
+    <span class="sep">/</span>
+    <a href="{{ .Site.Params.instagram }}" class="ext-link" target="_blank" rel="noopener">ig</a>
+  </div>
+</section>
+{{ end }}

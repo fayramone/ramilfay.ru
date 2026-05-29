@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="note-single">
+  <header class="note-header">
+    <time class="note-date">{{ .Date.Format "2006-01-02" }}</time>
+    <h1 class="note-title">{{ .Title }}</h1>
+  </header>
+  <div class="note-content prose">
+    {{ .Content }}
+  </div>
+  <footer class="note-footer">
+    <a href="{{ "/notes" | relLangURL }}" class="back-link">{{ .Site.Params.back }}</a>
+  </footer>
+</article>
+{{ end }}
