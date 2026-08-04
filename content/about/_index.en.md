@@ -6,7 +6,7 @@ layout: "about"
 
 I'm Ramil.
 
-I administer monolithic and microservice core banking systems at Innotech Group, previously at RSHB-Intech. Since 2017.
+I administer monolithic and microservice core banking systems. Since 2017.
 
 Studied at USPTU, bachelor's and master's in Control Systems Engineering.
 
@@ -19,7 +19,6 @@ In my spare time I'm leveling up in OOP and algorithms. Into video games, hardwa
 ### RSHB-Intech / Engineer — 2017–2023
 
 ### GSI SNEMA / Technician — 2016–2017
-where it started.
 
 ## links
 

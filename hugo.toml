@@ -11,7 +11,7 @@ defaultContentLanguageInSubdir = false
     title = "ramil fayzukhanov"
     [languages.ru.params]
       description = "персональная страница"
-      tagline = "прикладной админ в финтехе. стараюсь в сторону devops и ооп. разбираюсь как всё устроено"
+      tagline = "разбираюсь как всё устроено"
       nav_notes = "заметки"
       nav_about = "о себе"
       nav_home = "главная"
@@ -29,7 +29,7 @@ defaultContentLanguageInSubdir = false
     title = "ramil fayzukhanov"
     [languages.en.params]
       description = "personal page"
-      tagline = "admin in fintech. moving toward devops and oop. learning how things work"
+      tagline = "learning how things work"
       nav_notes = "notes"
       nav_about = "about"
       nav_home = "home"
