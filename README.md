@@ -21,4 +21,4 @@ hugo server -D
 
 ## deploy
 
-push to main → git hook on server runs `hugo` → nginx serves `/public`
+push to master → git hook on server runs `hugo` → nginx serves `/public`
