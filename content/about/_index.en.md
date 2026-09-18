@@ -14,7 +14,9 @@ In my spare time I'm leveling up in OOP and algorithms. Into video games, hardwa
 
 ## experience
 
-### Innotech Group / Application Administrator — 2023–present
+### RSHB-Automation / Engineer — 2026–present
+
+### Innotech Group / Application Administrator — 2023–2026
 
 ### RSHB-Intech / Engineer — 2017–2023
 
